@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 
 import { Home } from "./views/home";
-import { Demo } from "./views/demo";
+
 import { Single } from "./views/single";
 import injectContext from "./store/appContext";
 
@@ -25,10 +25,10 @@ const Layout = () => {
 						<Route exact path="/">
 							<Home />
 						</Route>
-						<Route exact path="/demo">
-							<Demo />
-						</Route>
-						<Route exact path="/single/:theid">
+						
+							
+						
+						<Route exact path="/single/:uid">
 							<Single />
 						</Route>
 						<Route>
