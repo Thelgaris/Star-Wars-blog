@@ -24,7 +24,7 @@ export const Home = () => {
           <div className="" key={character.uid}>
             <div className="">
               <div className="card" style={{ width: "18rem" }}>
-                <img src="..." className="card-img-top" alt="CharacterImage" />
+                <img src="..." className="card-img-top img-responsive" alt="CharacterImage" />
                 <div className="card-body">
                   <h5 className="card-title">{character.name}</h5>
                   <p className="card-text">{store.info.gender}</p>
