@@ -5,7 +5,7 @@ import { Context } from "../store/appContext";
 
 export const Home = () => {
   const { store, actions } = useContext(Context);
-  const { favourite, setFavourite } = useState([]);
+  const [ favourite, setFavourite ] = useState([]);
 
   useEffect(() => {
     actions.getcharacters();
@@ -34,10 +34,9 @@ export const Home = () => {
                     <button className="btn btn-outline-info">Learn more!</button>
                   </Link>
 				  
-                    <button className="btn btn-outline-info" onClick={()=>{
-							
-							console.log(character.uid);
-					}}>Favourite</button>
+                    <button className="btn btn-outline-info" onClick={(()=>{
+                      actions.setFavourite(character.name) 			         
+					          })}>Favourite</button>
                   
                 </div>
               </div>
