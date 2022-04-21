@@ -34,6 +34,20 @@ const getState = ({ getStore, getActions, setStore }) => {
 			setStore({ favourites: store.favourites.filter( (fav)=> fav != item)  });
 		}
       },
+      getPlanets: async () => {
+        const response = await fetch("https://www.swapi.tech/api/planets");
+        const data = await response.json();
+        setStore({ characters: data.results });
+      },
+      getOnecPlanet: async (uid) => {
+        const response = await fetch(
+          `https://www.swapi.tech/api/planets/${uid}`
+        );
+        const data = await response.json();
+        console.log(data);
+        setStore({ info: data.result.properties });
+        console.log(getStore().info);
+      },
     },
   };
 };

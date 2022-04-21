@@ -26,10 +26,10 @@ export const Home = () => {
               <div className="card" style={{ width: "18rem" }}>
                 <img src="..." className="card-img-top img-responsive" alt="CharacterImage" />
                 <div className="card-body">
-                  <h5 className="card-title">{character.name}</h5>
-                  <p className="card-text">{store.info.gender}</p>
-				  <p className="card-text">{store.info.hair_color}</p>
-				  <p className="card-text">{store.info.eye_color}</p>
+                    <h5 className="card-title">{character.name}</h5>
+                    <p className="card-text">{store.info.gender}</p>
+				            <p className="card-text">{store.info.hair_color}</p>
+				            <p className="card-text">{store.info.eye_color}</p>
                   <Link to={"/single/" + character.uid}>
                     <button className="btn btn-outline-info">Learn more!</button>
                   </Link>
