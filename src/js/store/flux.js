@@ -7,7 +7,10 @@ const getState = ({ getStore, getActions, setStore }) => {
       planets: [],
       planetInfo: [],
       vehicles: [],
-      vehicleInfo: []
+      vehicleInfo: [],
+      characterImg: [],
+      getOnecharacImg: []
+      
     },
 
     actions: {
@@ -65,6 +68,23 @@ const getState = ({ getStore, getActions, setStore }) => {
         console.log(data);
         setStore({ vehicleInfo: data.result.properties });
         console.log(getStore().vehicleInfo);
+      },
+
+      getcharacterImg: async () => {
+        const response = await fetch("https://starwars-visualguide.com/#/characters/page=1");
+        const data = await response.json();
+        setStore({ characterImg: data.results });
+        console.log(getStore().characterImg);
+      },
+
+      getOnecharacImg: async (uid) => {
+        const response = await fetch(
+          `https://starwars-visualguide.com/#/characters/${uid}`
+        );
+        const data = await response.json();
+        console.log(data);
+        setStore({ getOnecharacImg: data.result.properties });
+        console.log(getStore().getOnecharacImg);
       },
     },
   };

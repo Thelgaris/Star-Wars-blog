@@ -27,11 +27,11 @@ export const Planet = props => {
 			</div>
 			<div className="row">
 				<div className="col-2"><p>Name</p> <p>{store.planetInfo.name}</p></div>
-				{/* <div className="col-2"><p>Year of Birth</p> <p>{store.info.birth_year}</p></div>
-				<div className="col-2"><p>Gender</p> <p>{store.info.gender}</p></div>
-				<div className="col-2"><p>Height</p> <p>{store.info.height}</p></div>
-				<div className="col-2"><p>Skin color</p> <p>{store.info.skin_color}</p></div>
-				<div className="col-2"><p>Eye color</p> <p>{store.info.eye_color}</p></div> */}
+                <div className="col-2"><p>Population</p> <p>{store.planetInfo.population}</p></div>
+				<div className="col-2"><p>Climate</p> <p>{store.planetInfo.climate}</p></div>
+				<div className="col-2"><p>Terrain</p> <p>{store.planetInfo.terrain}</p></div>
+				<div className="col-2"><p>Gravity</p> <p>{store.planetInfo.gravity}</p></div>				
+				<div className="col-2"><p>Diameter</p> <p>{store.planetInfo.diameter}</p></div>
 			</div>
 			<Link to="/">
 				<span className="btn btn-primary btn-lg" href="#" role="button">

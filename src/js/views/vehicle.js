@@ -27,11 +27,11 @@ export const Vehicle = props => {
 			</div>
 			<div className="row">
 				<div className="col-2"><p>Name</p> <p>{store.vehicleInfo.name}</p></div>
-				{/* <div className="col-2"><p>Year of Birth</p> <p>{store.info.birth_year}</p></div>
-				<div className="col-2"><p>Gender</p> <p>{store.info.gender}</p></div>
-				<div className="col-2"><p>Height</p> <p>{store.info.height}</p></div>
-				<div className="col-2"><p>Skin color</p> <p>{store.info.skin_color}</p></div>
-				<div className="col-2"><p>Eye color</p> <p>{store.info.eye_color}</p></div> */}
+				<div className="col-2"><p>Model</p> <p>{store.vehicleInfo.model}</p></div>
+				<div className="col-2"><p>Crew</p> <p>{store.vehicleInfo.crew}</p></div>
+				<div className="col-2"><p>Length</p> <p>{store.vehicleInfo.length}</p></div>
+				<div className="col-2"><p>Vehicle Class</p> <p>{store.vehicleInfo.vehicle_class}</p></div>
+				<div className="col-2"><p>Manufacturer</p> <p>{store.vehicleInfo.manufacturer}</p></div>
 			</div>
 			<Link to="/">
 				<span className="btn btn-primary btn-lg" href="#" role="button">
