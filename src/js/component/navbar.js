@@ -13,7 +13,7 @@ export const Navbar = () => {
 				
 				<div className="btn-group">
   						<button className="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-   						Favourites
+   						Favourites <div>{store.favourites.length}</div>
   						</button>
   						<ul className="dropdown-menu-lg-end" aria-labelledby="dropdownMenuButton1" >
 						  {store.favourites.map((item, index) =>{

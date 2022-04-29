@@ -17,7 +17,7 @@ export const Planet = props => {
 		<div>
 			<div className="row">
 				<div className="col-6">
-					<img src="https://picsum.photos/400/200" className="img-fluid" alt="..." style={{maxWidth: "80%", height: "auto"}}></img>
+					<img src="https://picsum.photos/400/200" className="img-fluid" alt="Planet Image" style={{maxWidth: "80%", height: "auto"}}></img>
 				</div>
 				<div className="col-6">
 					<h2> {console.log(store.planetInfo.name)} {store.planetInfo.name}</h2>
@@ -33,11 +33,6 @@ export const Planet = props => {
 				<div className="col-2"><p>Gravity</p> <p>{store.planetInfo.gravity}</p></div>				
 				<div className="col-2"><p>Diameter</p> <p>{store.planetInfo.diameter}</p></div>
 			</div>
-			<Link to="/">
-				<span className="btn btn-primary btn-lg" href="#" role="button">
-					Back home
-				</span>
-			</Link>
 		</div>
 	);
 };

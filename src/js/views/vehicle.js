@@ -17,7 +17,7 @@ export const Vehicle = props => {
 		<div>
 			<div className="row">
 				<div className="col-6">
-					<img src="https://picsum.photos/400/200" className="img-fluid" alt="..." style={{maxWidth: "80%", height: "auto"}}></img>
+					<img src="https://picsum.photos/400/200" className="img-fluid" alt="Vehicle Image" style={{maxWidth: "80%", height: "auto"}}></img>
 				</div>
 				<div className="col-6">
 					<h2> {console.log(store.vehicleInfo.name)} {store.vehicleInfo.name}</h2>
@@ -33,11 +33,6 @@ export const Vehicle = props => {
 				<div className="col-2"><p>Vehicle Class</p> <p>{store.vehicleInfo.vehicle_class}</p></div>
 				<div className="col-2"><p>Manufacturer</p> <p>{store.vehicleInfo.manufacturer}</p></div>
 			</div>
-			<Link to="/">
-				<span className="btn btn-primary btn-lg" href="#" role="button">
-					Back home
-				</span>
-			</Link>
 		</div>
 	);
 };

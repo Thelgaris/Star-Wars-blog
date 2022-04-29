@@ -10,7 +10,7 @@ export const Home = () => {
     actions.getcharacters();
     actions.getplanets();
     actions.getvehicles();
-    actions.getcharacterImg();
+    
   }, []);
 
   return (

@@ -9,6 +9,7 @@ export const Single = props => {
 
 	useEffect(() => {
 		actions.getOnecharacter(uid)
+		
 	}, [])
 
 
@@ -17,7 +18,7 @@ export const Single = props => {
 		<div>
 			<div className="row">
 				<div className="col-6">
-					<img src="https://picsum.photos/400/200" className="img-fluid" alt="..." style={{maxWidth: "80%", height: "auto"}}>{}</img>
+					<img src="" className="img-fluid" alt="Character Image" style={{maxWidth: "80%", height: "auto"}}></img>
 				</div>
 				<div className="col-6">
 					<h2> {console.log(store.info.name)} {store.info.name}</h2>
@@ -33,11 +34,6 @@ export const Single = props => {
 				<div className="col-2"><p>Skin color</p> <p>{store.info.skin_color}</p></div>
 				<div className="col-2"><p>Eye color</p> <p>{store.info.eye_color}</p></div>
 			</div>
-			<Link to="/">
-				<span className="btn btn-primary btn-lg" href="#" role="button">
-					Back home
-				</span>
-			</Link>
 		</div>
 	);
 };
